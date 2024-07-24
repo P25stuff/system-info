@@ -1,0 +1,53 @@
+#  - name: Group Name
+#     config:
+#       active: true
+#       affiliated: false
+#       parrot: false
+#       inclusion: [101001, 101002, 101003, 101004]
+#       exclusion: []
+#       rewrite: []
+#       always: []
+#       preferred: []
+#     source:
+#       slot: 1
+#       tgid: 2321
+
+groupVoice:
+
+  - name: Operations
+    config:
+      active: true
+      affiliated: false
+    source:
+      tgid: 200
+
+  - name: Tactical 1
+    config:
+      active: true
+      affiliated: false
+    source:
+      tgid: 201
+
+  - name: Interop
+    config:
+      active: true
+      affiliated: true
+      rewrite:
+        - peerid: 5101
+          tgid: 789
+      always:
+        - 5101
+    source:
+      tgid: 351
+
+  - name: Admin Ops
+    config:
+      active: true
+      affiliated: true
+      inclusion:
+        - 2001
+        - 2002
+        - 2101
+        - 2102
+    source:
+      tgid: 801
