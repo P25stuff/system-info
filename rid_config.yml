@@ -1,0 +1,17 @@
+rid_list:
+
+  - rid: 44011
+    enabled: 1
+    alias: 401
+
+  - rid: 44012
+    enabled: 1
+    alias: 401
+
+  - rid: 44021
+    enabled: 1
+    alias: 402
+
+  - rid: 44031
+    enabled: 1
+    alias: 403
